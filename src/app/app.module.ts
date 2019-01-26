@@ -1,3 +1,4 @@
+import { TabsPageModule } from './tabs/tabs.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -21,7 +22,8 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
     IonicModule.forRoot(),
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    TabsPageModule
   ],
   providers: [
     StatusBar,

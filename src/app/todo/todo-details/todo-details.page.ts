@@ -36,8 +36,8 @@ export class TodoDetailsPage implements OnInit {
     await loading.present();
 
     this.todoService.getTodo(this.todoId).subscribe(res => {
-      loading.dismiss();
       this.todo = res;
+      loading.dismiss();
     });
   }
 

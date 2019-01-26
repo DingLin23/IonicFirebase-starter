@@ -7,17 +7,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
-  {
-    path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
-  },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
-  },
-  { path: 'todos', loadChildren: './todo/todo.module#TodoPageModule' },
+  // {
+  //   path: 'home',
+  //   loadChildren: './home/home.module#HomePageModule'
+  // },
+  // {
+  //   path: 'list',
+  //   loadChildren: './list/list.module#ListPageModule'
+  // },
+  // { path: 'todos', loadChildren: './todo/todo.module#TodoPageModule' },
   { path: 'todo-details/:id', loadChildren: './todo/todo-details/todo-details.module#TodoDetailsPageModule' },
-  { path: 'todo-details', loadChildren: './todo/todo-details/todo-details.module#TodoDetailsPageModule' }
+  { path: 'todo-details', loadChildren: './todo/todo-details/todo-details.module#TodoDetailsPageModule' },
+  { path: 'app', loadChildren: './tabs/tabs.module#TabsPageModule' }
 ];
 
 @NgModule({
